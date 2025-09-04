@@ -1,0 +1,16 @@
+{
+  "name": "honeystone-website",
+  "version": "1.0.0",
+  "description": "HoneyStone Ltd - Simple, Innovative Software",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": ["website", "static", "honeystone"],
+  "author": "HoneyStone Ltd",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.0"
+  }
+}
