@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HoneyStone Ltd — Simple, Innovative Software</title>
+  <meta name="description" content="HoneyStone Ltd is a New Zealand software company exploring and launching simple, innovative apps and services." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 128 128'%3E%3Cpath fill='%23f4c430' d='M64 6l46 26v64L64 122 18 96V32z'/%3E%3Cpath fill='%23222' d='M64 18l36 20v52L64 110 28 90V38z' opacity='.12'/%3E%3C/svg%3E"/>
+  <style>
+    :root{
+      --bg:#0f172a; /* slate-900 */
+      --fg:#e5e7eb; /* gray-200 */
+      --muted:#94a3b8; /* slate-400 */
+      --brand:#f4c430; /* honey gold */
+      --card:#111827; /* gray-900 */
+      --link:#fcd34d;
+      --accent:#22d3ee; /* cyan-400 */
+      --max:1100px;
+      --radius:16px;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;height:100%;background:radial-gradient(1200px 600px at 10% -10%, rgba(34,211,238,.15), transparent 60%),radial-gradient(1200px 600px at 90% 10%, rgba(244,196,48,.12), transparent 60%), var(--bg); color:var(--fg); font:16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial, sans-serif}
+    a{color:var(--link);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:var(--max);margin:0 auto;padding:24px}
+    header{position:sticky;top:0;backdrop-filter:saturate(140%) blur(8px);background:rgba(15,23,42,.6);border-bottom:1px solid rgba(148,163,184,.2);z-index:10}
+    .nav{display:flex;gap:18px;align-items:center;justify-content:space-between}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:700}
+    .logo{width:28px;height:28px;border-radius:8px;display:grid;place-items:center;background:conic-gradient(from 0turn, #f4c430, #f59e0b, #fcd34d, #f4c430)}
+    .badge{font-size:12px;color:#0f172a;background:var(--brand);padding:2px 8px;border-radius:999px;font-weight:700}
+    nav a{opacity:.9}
+    main section{padding:56px 0}
+    .hero{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:center}
+    .card{background:rgba(17,24,39,.6);border:1px solid rgba(148,163,184,.18);border-radius:var(--radius);padding:24px;box-shadow:0 10px 30px rgba(0,0,0,.35)}
+    h1{font-size:44px;line-height:1.1;margin:0 0 10px}
+    h2{font-size:28px;margin:0 0 18px}
+    h3{font-size:20px;margin:18px 0 6px}
+    p{margin:8px 0}
+    ul{margin:8px 0 0 18px}
+    .btn{display:inline-block;background:var(--brand);color:#111827;font-weight:700;padding:12px 16px;border-radius:10px}
+    .btn:hover{filter:brightness(.95)}
+    .grid{display:grid;gap:18px}
+    .grid.cols-3{grid-template-columns:repeat(3,1fr)}
+    .grid.cols-2{grid-template-columns:repeat(2,1fr)}
+    .muted{color:var(--muted)}
+    .kicker{letter-spacing:.08em;text-transform:uppercase;color:var(--accent);font-size:12px;font-weight:700}
+    .pill{display:inline-flex;gap:8px;align-items:center;padding:8px 12px;border:1px solid rgba(148,163,184,.25);border-radius:999px;background:rgba(255,255,255,.03)}
+    footer{border-top:1px solid rgba(148,163,184,.2);padding:32px 0 60px}
+    .small{font-size:13px}
+    .mono{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace}
+    .legal section{padding:28px 0}
+    @media (max-width:900px){.hero{grid-template-columns:1fr}.grid.cols-3{grid-template-columns:1fr}.grid.cols-2{grid-template-columns:1fr}}
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "HoneyStone Ltd",
+    "url": "https://example.com",
+    "logo": "https://example.com/logo.png",
+    "address": {"@type": "PostalAddress","addressCountry": "NZ","addressLocality": "Wellington"},
+    "sameAs": []
+  }
+  </script>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <span>HoneyStone&nbsp;Ltd</span>
+        <span class="badge">NZ Software</span>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        &nbsp;•&nbsp;
+        <a href="#what-we-do">What we do</a>
+        &nbsp;•&nbsp;
+        <a href="#contact">Contact</a>
+        &nbsp;•&nbsp;
+        <a href="#privacy">Privacy</a>
+        &nbsp;•&nbsp;
+        <a href="#terms">Terms</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div>
+        <p class="kicker">Simple, useful, well‑crafted</p>
+        <h1>We build small, innovative software that punches above its weight.</h1>
+        <p class="muted">HoneyStone Ltd is a New Zealand company exploring and launching lightweight apps and services. We prototype fast, learn from real users, and iterate. Some ideas become products; others become learnings that help the next release.</p>
+        <p>
+          <a class="btn" href="#contact">Get in touch</a>
+          &nbsp;&nbsp;<span class="pill"><span class="mono">NZBN</span> <span>— add your number</span></span>
+        </p>
+      </div>
+      <div class="card">
+        <h3>Current focus</h3>
+        <ul>
+          <li>Web apps and small APIs</li>
+          <li>Prototypes for data‑driven tools</li>
+          <li>Payment integrations (e.g., Stripe)</li>
+        </ul>
+        <p class="small muted">Looking for a simple proof‑of‑concept or a tiny tool that solves a real problem? That’s our sweet spot.</p>
+      </div>
+    </section>
+
+    <!-- WHAT WE DO -->
+    <section id="what-we-do">
+      <h2>What we do</h2>
+      <div class="grid cols-3">
+        <div class="card">
+          <h3>Prototype</h3>
+          <p>We turn ideas into clickable demos quickly, validating the core value before scaling.</p>
+        </div>
+        <div class="card">
+          <h3>Ship</h3>
+          <p>We harden the best ideas into small, reliable products with clean, modern UX.</p>
+        </div>
+        <div class="card">
+          <h3>Iterate</h3>
+          <p>We release improvements continuously based on feedback and simple metrics.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <h2>About</h2>
+      <div class="grid cols-2">
+        <div class="card">
+          <p>HoneyStone Ltd ("HoneyStone") is a small, independent software studio based in Wellington, New Zealand. We explore ideas across web, data, and automation, with a preference for elegant, minimal solutions.</p>
+          <p class="muted small">Incorporated in New Zealand. Jurisdiction: New Zealand law. Trading name: HoneyStone Ltd.</p>
+        </div>
+        <div class="card">
+          <h3>Values</h3>
+          <ul>
+            <li>Keep it simple</li>
+            <li>Respect users & privacy</li>
+            <li>Ship, learn, improve</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="card">
+        <p>Email: <a href="mailto:hello@honeystoneltd.co.nz">hello@honeystoneltd.co.nz</a></p>
+        <p>Location: Wellington, New Zealand</p>
+        <p class="small muted">We aim to reply within 2–3 business days.</p>
+      </div>
+    </section>
+
+    <!-- LEGAL -->
+    <section id="privacy" class="legal">
+      <h2>Privacy Policy</h2>
+      <section>
+        <p><strong>Last updated:</strong> 4 September 2025</p>
+        <p>We respect your privacy. This policy explains how HoneyStone collects, uses, and protects personal information when you use our website and services.</p>
+      </section>
+      <section>
+        <h3>1. Information we collect</h3>
+        <ul>
+          <li><em>Contact information</em> you provide (e.g., name, email) when you get in touch.</li>
+          <li><em>Usage information</em> such as page views and diagnostics (via basic analytics/cookies).</li>
+          <li><em>Payment information</em> is processed by our payment providers (e.g., Stripe); we do not store full card details.</li>
+        </ul>
+      </section>
+      <section>
+        <h3>2. How we use information</h3>
+        <ul>
+          <li>To provide, maintain, and improve our services.</li>
+          <li>To communicate with you and respond to enquiries.</li>
+          <li>To comply with legal obligations.</li>
+        </ul>
+      </section>
+      <section>
+        <h3>3. Sharing</h3>
+        <p>We do not sell your personal information. We may share data with trusted service providers (e.g., hosting, analytics, payments) under contracts that protect your information, and when required by law.</p>
+      </section>
+      <section>
+        <h3>4. Cookies & analytics</h3>
+        <p>We may use a minimal analytics tool and essential cookies to understand basic traffic and ensure site functionality. You can control cookies via your browser settings.</p>
+      </section>
+      <section>
+        <h3>5. Data location & retention</h3>
+        <p>Your data may be processed in New Zealand and other countries where our vendors operate. We keep data only as long as necessary for the purposes above, unless a longer period is required by law.</p>
+      </section>
+      <section>
+        <h3>6. Your rights</h3>
+        <p>Subject to local law, you may request access to or correction of your personal information. Contact us at <a href="mailto:privacy@honeystoneltd.co.nz">privacy@honeystoneltd.co.nz</a>.</p>
+      </section>
+      <section>
+        <h3>7. Children</h3>
+        <p>Our services are not directed to children under 13.</p>
+      </section>
+      <section>
+        <h3>8. Changes</h3>
+        <p>We may update this policy. We will post the effective date above.</p>
+      </section>
+      <section>
+        <h3>9. Contact</h3>
+        <p>For privacy questions, email <a href="mailto:privacy@honeystoneltd.co.nz">privacy@honeystoneltd.co.nz</a>.</p>
+      </section>
+    </section>
+
+    <section id="terms" class="legal">
+      <h2>Terms of Service</h2>
+      <section>
+        <p><strong>Last updated:</strong> 4 September 2025</p>
+        <p>These Terms govern your access to and use of HoneyStone’s website and services. By using our services, you agree to these Terms.</p>
+      </section>
+      <section>
+        <h3>1. Services</h3>
+        <p>We build and test small software products. Features may change as we iterate. We may add or remove functionality at any time.</p>
+      </section>
+      <section>
+        <h3>2. Accounts</h3>
+        <p>You are responsible for maintaining the confidentiality of your credentials and for all activities under your account.</p>
+      </section>
+      <section>
+        <h3>3. Payments & refunds</h3>
+        <p>Where fees apply, payments are processed securely by third‑party providers (e.g., Stripe). Unless stated otherwise for a specific product, fees for digital services are non‑refundable except as required by applicable law.</p>
+      </section>
+      <section>
+        <h3>4. Acceptable use</h3>
+        <p>Do not misuse the services (e.g., illegal activity, infringement, security abuse, or spam). We may suspend or terminate access for violations.</p>
+      </section>
+      <section>
+        <h3>5. Intellectual property</h3>
+        <p>All content and software we provide is owned by HoneyStone or its licensors and protected by law. You retain rights to your own content.</p>
+      </section>
+      <section>
+        <h3>6. Disclaimers</h3>
+        <p>Services are provided “as is” without warranties of any kind to the fullest extent permitted by law.</p>
+      </section>
+      <section>
+        <h3>7. Liability</h3>
+        <p>To the maximum extent permitted by law, HoneyStone will not be liable for indirect or consequential losses. Our aggregate liability is limited to the amounts you paid to us in the 12 months preceding the claim.</p>
+      </section>
+      <section>
+        <h3>8. Governing law</h3>
+        <p>These Terms are governed by the laws of New Zealand. Disputes will be subject to the exclusive jurisdiction of New Zealand courts.</p>
+      </section>
+      <section>
+        <h3>9. Contact</h3>
+        <p>Questions about these Terms: <a href="mailto:legal@honeystoneltd.co.nz">legal@honeystoneltd.co.nz</a>.</p>
+      </section>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap small">
+      <div class="grid cols-2">
+        <div>
+          <strong>HoneyStone Ltd</strong><br />
+          Wellington, New Zealand<br />
+          Email: <a href="mailto:hello@honeystoneltd.co.nz">hello@honeystoneltd.co.nz</a>
+        </div>
+        <div class="muted">
+          © <span id="y"></span> HoneyStone Ltd. All rights reserved. · <a href="#privacy">Privacy</a> · <a href="#terms">Terms</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Set current year in footer
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
